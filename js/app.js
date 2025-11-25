@@ -17,6 +17,15 @@ function autoLogin() {
     log("ENV:", res);
   });
 
+log("------------:");
+ ma.native("getMiniAppToken", { appId: merchantAppId })
+      .then(res => {
+        log("getMiniAppToken res :", res);
+        const data = JSON.parse(res);
+        resolve(data.token);
+      })
+      .catch(err => reject(err));
+log("------------:");
   getMiniAppToken()
     .then(token => {
       log("token :", token);
