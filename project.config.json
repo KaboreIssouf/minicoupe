@@ -1,0 +1,8 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "MiniCoupe",
+  "description": "MiniCoupe H5 MiniApp",
+  "setting": {
+    "es5": true
+  }
+}

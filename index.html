@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniCoupe</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <main class="page">
+    <h1>MiniCoupe XX</h1>
+
+    <p>Montant : <span id="price">100</span> XOF</p>
+
+    <button id="payBtn">Payer</button>
+
+    <pre id="log"></pre>
+
+    <div id="userinfo"></div>
+  </main>
+
+  <!-- VConsole (debug) -->
+  <script src="./js/vconsole.min.js"></script>
+  <script>
+    var vConsole = new window.VConsole();
+  </script>
+
+  <!-- SDK MiniApp -->
+  <script src="./js/js-sdk.min.js"></script>
+
+  <!-- Configuration -->
+  <script src="./js/config.js"></script>
+
+  <!-- Ton code -->
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
