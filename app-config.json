@@ -1,6 +1,1 @@
-{
-  "miniprogramRoot": "./",
-  "appid": "99e4ed05b3213e2f8112624ab3a3d75f",
-  "projectname": "MiniCoupe",
-  "compileType": "h5"
-}
+{"pages":["index.html"],"entryPagePath":"index.html","page":{},"global":{"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTextStyle":"black","capsuleTheme":"light"}},"type":"legacy"}

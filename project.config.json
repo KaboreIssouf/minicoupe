@@ -1,8 +1,9 @@
 {
-  "miniprogramRoot": "./",
-  "projectname": "MiniCoupe",
-  "description": "MiniCoupe H5 MiniApp",
-  "setting": {
-    "es5": true
-  }
+    "description": "Project Config File",
+    "compileType": "miniprogram",
+    "appid": "1764079383887",
+    "projectname": "xxxx",
+    "setting":{
+        "es5":true
+    }
 }

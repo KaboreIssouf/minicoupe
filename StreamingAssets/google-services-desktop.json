@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227621052595",
+    "project_id": "bamara-score",
+    "storage_bucket": "bamara-score.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227621052595:android:0881868857c8b80f2410c6",
+        "android_client_info": {
+          "package_name": "com.masseka.bamarascore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6H1Sw1GRzC8CGBzB0eXUzjWuhEwraWwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
