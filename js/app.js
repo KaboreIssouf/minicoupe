@@ -18,50 +18,14 @@ function autoLogin() {
   });
 
 log("------------:");
- ma.native("getMiniAppToken", { appId: merchantAppId })
-      .then(res => {
-        log("getMiniAppToken res :", res);
-        const data = JSON.parse(res);
-        resolve(data.token);
-      })
-      .catch(err => reject(err));
+ var x = ma.miniProgram.autoLogin();
+ log("✔ Auto login success:", res);
+
 log("------------:");
 
 }
-
-function getMiniAppToken() {
-  return new Promise((resolve, reject) => {
-    ma.native("getMiniAppToken", { appId: merchantAppId })
-      .then(res => {
-        log("getMiniAppToken res :", res);
-        const data = JSON.parse(res);
-        resolve(data.token);
-      })
-      .catch(err => reject(err));
-  });
-}
-
-// API BackEnd pour authentifier l'utilisateur
-function authToken(token) {
-  log("authToken", token);
-
-  return fetch(baseUrl + "/auth/token", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ authToken: token })
-  })
-    .then(res => res.json())
-    .then(json => {
-      log("auth response:", json);
-
-      const biz = json.biz_content;
-
-      document.getElementById("userinfo").innerHTML = `
-        <br>openId:<br> <span style="color:red;">${biz.open_id}</span>
-        <br><br>identityId:<br> <span style="color:red;">${biz.identityId}</span>
-      `;
-    });
-}
+ 
+ 
 
 // ------------------------- PAIEMENT MOCK --------------------------
 function startPay() {
