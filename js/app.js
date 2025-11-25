@@ -26,17 +26,7 @@ log("------------:");
       })
       .catch(err => reject(err));
 log("------------:");
-  getMiniAppToken()
-    .then(token => {
-      log("token :", token);
-      return authToken(token);
-    })
-    .catch(err => {
-      log("getMiniAppToken error :", err);
-    })
-    .finally(() => {
-      log("autoLogin finished");
-    });
+
 }
 
 function getMiniAppToken() {
