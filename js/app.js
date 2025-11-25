@@ -17,6 +17,18 @@ function autoLogin() {
     log("ENV:", res);
   });
 
+  ma.miniProgram.ma.getOpenUserInfo({
+    success: (res) => {
+       log("ENV:", res);
+    },
+    fail: (res) => {
+       log("er:", res);
+    }
+  })(res => {
+    log("er:", res);
+  });
+
+
 log("------------:");
  var x = ma.miniProgram.autoLogin();
  log("✔ Auto login success:", res);
